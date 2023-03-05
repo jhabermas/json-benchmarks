@@ -73,6 +73,10 @@ build/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Rust
+/target/
+Cargo.lock
+
 # Other
 *.pyc
 .DS_Store
