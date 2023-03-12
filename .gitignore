@@ -2,6 +2,8 @@
 .DS_Store
 .venv
 build
+bin
+results
 
 # Prerequisites
 *.d
