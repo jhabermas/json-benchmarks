@@ -3,7 +3,6 @@
 .venv
 build
 bin
-results
 
 # Prerequisites
 *.d
