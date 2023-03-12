@@ -1,12 +1,13 @@
 extern crate serde_json;
 extern crate uuid;
 
-use serde_json::{Result, Value};
+use serde_json::json;
+use serde_json::Value;
 use uuid::Uuid;
 
 use std::time::{SystemTime, UNIX_EPOCH};
 
-fn generate_json_objects(n: i32) -> Vec<String> {
+pub fn generate_json_objects(n: i32) -> Vec<String> {
     let mut json_array: Vec<String> = Vec::new();
     for i in 0..n {
         let obj: Value = json!({

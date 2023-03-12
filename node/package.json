@@ -1,0 +1,31 @@
+{
+  "name": "json_benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhabermas/json-benchmarks.git"
+  },
+  "keywords": [
+    "json",
+    "bechmark",
+    "node.js",
+    "python",
+    "cpp",
+    "rust"
+  ],
+  "author": "jh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhabermas/json-benchmarks/issues"
+  },
+  "homepage": "https://github.com/jhabermas/json-benchmarks#readme",
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "uuid": "^9.0.0"
+  }
+}

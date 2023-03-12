@@ -77,7 +77,16 @@ build/
 /target/
 Cargo.lock
 
+# Node
+dist
+tmp
+build
+*.tsbuildinfo
+node_modules/
+jspm_packages/
+
 # Other
 *.pyc
+*.csv
 .DS_Store
 .pytest_cache

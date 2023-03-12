@@ -4,6 +4,14 @@ C++, CMake and conan repository template with library, app, tests and python bin
 
 ## Building
 
+"id" - the last 8 characters of the original ID
+"str" - only the first word from the original "string"
+"num" - value of "number" + 1
+"val" - 0 if "null" is None otherwise 1
+"sum" - the sum of "array" elements
+"obj" - "object"
+"timestamp" - timestamp, but converted from unix to ISO time format
+
 From virtual env:
 
 ```bash
