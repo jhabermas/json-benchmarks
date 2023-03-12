@@ -1,9 +1,14 @@
 import os
+import sys
 import matplotlib.pyplot as plt
 import pandas as pd
 from json_benchmark.cli import parse_args
 from subprocess import run
-from .commands import benchmark_commands
+from commands import benchmark_commands
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 
 def run_benchmarks(commands, dry_run=False):
@@ -39,11 +44,11 @@ def show_results(df, output_folder, num_objects):
     ax.set_xlim([0.0, df['Time'].max() * 1.2])
 
     plt.tight_layout()
-    plt.savefig([os.path.join([output_folder, 'benchmarks.png']))
+    plt.savefig(os.path.join([output_folder, 'benchmarks.png']))
     plt.show()
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     args = parse_args()
     results_dir = os.path.abspath(args.csv_file)
     os.makedirs(results_dir, exist_ok=True)
