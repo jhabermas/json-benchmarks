@@ -24,7 +24,7 @@ jobs:
         pip install -r python/requirements.txt
 
     - name: Build all the things
-      run: ./scripts/build_all.sh
+      run: sh ./scripts/build_all.sh
 
     - name: Test Python
       run: pytest python
